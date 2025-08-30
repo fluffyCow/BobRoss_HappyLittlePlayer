@@ -39,7 +39,7 @@ YOUTUBE_API_KEY = "YOUR_API_KEY"
 ```
 
 ### 4. Organize your episodes
-Place your .mp4 files in:
+Place your .mp4 files a folder like:
 ```bash
 /home/YOUR_USERNAME/bob_ross/
 ```
@@ -47,6 +47,11 @@ You can use subfolders like:
 ```bash
 /home/YOUR_USERNAME/bob_ross/Season1/
 ```
+add the path to bobross_player.py
+```
+LOCAL_EPISODE_DIR = os.path.expanduser("~/bob_ross")
+```
+
 ## Run the Player
 ```
 python3 bobross_player.py
