@@ -6,10 +6,15 @@ import vlc
 
 # Replace with your actual YouTube Data API key
 YOUTUBE_API_KEY = "YOUR_API_KEY"
-CHANNEL_ID = "UCBVN9zNfGz3qXnH3dGqNNXA"  # Bob Ross official channel
-CHECK_INTERVAL = 300  # seconds between live checks
 
-LOCAL_EPISODE_DIR = os.path.expanduser("~/bob_ross")
+# Path to local files
+LOCAL_EPISODE_DIR = os.path.expanduser("~/bob_ross")  
+
+# Bob Ross official channel
+CHANNEL_ID = "UCBVN9zNfGz3qXnH3dGqNNXA"  
+
+# seconds between live checks
+CHECK_INTERVAL = 300  
 
 def get_live_video_id():
     url = (
